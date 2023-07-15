@@ -14,7 +14,7 @@ export default function Painting(props) {
   
     return  (
       <div>
-        <img src={imageUrl} alt={title} width="480" />
+        <img src={imageUrl ?? defaultImage} alt={title} width="480" />
         <h2>{title}</h2>
         <p>Автор: <a href={profileUrl}>{authorName}</a></p> 
         <p>Цена: {price} кредитов</p>
